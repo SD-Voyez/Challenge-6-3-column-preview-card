@@ -1,4 +1,6 @@
 # Front-end Style Guide
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;
 
 ## Layout
 
