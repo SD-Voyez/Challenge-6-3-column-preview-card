@@ -38,8 +38,10 @@ h1
     text-transform: uppercase;
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
-    font-size: 1.9em;
+    font-size: 2.6em;
     color: hsl(0, 0%, 95%);
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 main
@@ -49,46 +51,43 @@ main
     overflow: hidden;
     display: flex;
     flex-flow: row wrap;
+    min-height: 500px;
 }
 
 article
 {
     max-width: 300px;
-    min-height: 400px;
-    padding: 3.5em;
+    padding: 3.4em;
     display: flex;
     flex-flow: column wrap;
-    align-content: space-between;
     align-items: flex-start;
-}
-
-p
-{
-    line-height: 1.8em;
-}
-
-h1
-{
-    font-size: 2.6em;
-}
-
-.cta
-{
-    display: flex;
-    gap: 100px;
-    background-color: hsl(0, 0%, 95%);
-    width: auto;
-    border-radius: 15em;
+    justify-content: flex-start;
 }
 
 .cta a
 {
     display: block;
     width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0.5em 1.5em 0.5em 1.5em;
+    padding: 1em 2em 1em 2em;
+    margin-top: 13vh;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 2em;
+    border: solid 3px hsl(0, 0%, 95%);
+    transition: .1s ease;
 }
+
+.cta a:hover
+{
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    transition: .1s ease;
+}
+
+p
+{
+    line-height: 1.6em;
+}
+
 
 .sedans a
 {color: hsl(31, 77%, 52%);}
@@ -110,4 +109,27 @@ h1
 .luxury
 {
     background-color: hsl(179, 100%, 13%);
+}
+
+
+/* --- RESPONSIVE --- */
+
+@media all and (max-width: 1015px)
+{
+    main 
+    {
+        max-height: 100%;
+        flex-direction: column;
+    }
+
+    article
+    {
+        max-width: 330px;
+        padding-bottom: 40px;
+    }
+
+    .cta a
+    {
+        margin-top: 5vh;
+    }
 }
