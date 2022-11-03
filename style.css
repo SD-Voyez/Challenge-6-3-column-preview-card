@@ -30,6 +30,7 @@ body
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
     color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
 }
 
 h1 
@@ -53,11 +54,48 @@ main
 article
 {
     max-width: 300px;
-    padding: 2rem;
+    min-height: 400px;
+    padding: 3.5em;
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
+    align-items: flex-start;
 }
+
+p
+{
+    line-height: 1.8em;
+}
+
+h1
+{
+    font-size: 2.6em;
+}
+
+.cta
+{
+    display: flex;
+    gap: 100px;
+    background-color: hsl(0, 0%, 95%);
+    width: auto;
+    border-radius: 15em;
+}
+
+.cta a
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+.sedans a
+{color: hsl(31, 77%, 52%);}
+.suvs a
+{color: hsl(184, 100%, 22%);}
+.luxury a
+{color: hsl(179, 100%, 13%);}
 
 .sedans
 {
